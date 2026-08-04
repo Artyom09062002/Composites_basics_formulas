@@ -1,7 +1,5 @@
 # Composites basics formulas
 
-![Python](https://img.shields.io/badge/python-3.12%2B-blue) ![numpy](https://img.shields.io/badge/numpy-2.5%2B-blue) ![tests](https://img.shields.io/badge/tests-14-lightgrey)
-
 Classical lamination theory built up from first principles, plus one worked
 application: a local buckling screening of the upper spar-cap panel of a DU35
 wind-turbine blade section.
@@ -13,10 +11,6 @@ application half runs it on geometry measured from a FreeCAD model.
 
 Everything here is a screening calculation. It is not certified analysis, and
 there is no experimental validation.
-
-<p align="center">
-  <img src="docs/panel-section.png" width="720" alt="DU35 section with the screened panel between the two web centrelines">
-</p>
 
 ---
 
@@ -115,10 +109,6 @@ stiffness `D` alone. It assumes the stack is mirrored about its mid-plane. This
 one is not — the skin sits on one face only, which puts the stiffness centre
 0.44 mm off the mid-plane and produces `B11 = 1.27 MN`.
 
-<p align="center">
-  <img src="docs/stack-eccentricity.png" width="720" alt="Mid-plane and stiffness centre 0.44 mm apart, with a magnified inset">
-</p>
-
 That is not a small inaccuracy to be absorbed — it is a violated assumption, so
 `D` alone is inadmissible here.
 
@@ -143,10 +133,6 @@ established by computing it, not before.
 The spanwise support spacing `a` is not known: the CAD model is a 100 mm slice
 and does not contain it. So `a` is swept from `a/b = 0.5` to `4` rather than
 assumed.
-
-<p align="center">
-  <img src="docs/span-sweep.png" width="720" alt="Critical load against assumed span ratio, worst case 27.49 MN/m against 7.085 MN/m applied">
-</p>
 
 The curve is festooned because the panel buckles into a whole number of
 half-waves, and switches to one more as it lengthens. The worst case anywhere
