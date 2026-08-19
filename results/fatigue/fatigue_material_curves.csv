@@ -1,0 +1,5 @@
+curve,C_MPa,b,status,source
+Saertex DB shear proxy,62.0,10.0,estimated conservative design envelope,Conservative design envelope: C=62 MPa from MAT-002 static shear strength and b=10
+Saertex DB conservative robust envelope,62.0,9.0,estimated conservative robust envelope,"Estimated conservative envelope: measured Saertex VU 90079 R=-1 C_shear=78 MPa, b=9.709 rounded down to C=62 MPa, b=9"
+Saertex VU 90079 measured R=-1 shear reference,78.0,9.708737864077671,measured reference,"Mandell, Miller & Samborsky 2013, AIAA-2013-1630, Fig. 7 Fabric L and Table 2 (ASTM D3518 shear = axial/2)"
+Divinycell H100 measured shear-fatigue curve,2.34,12.08,measured curve,"NASA/TM-2012-217694 Section 4, Table 3 and Figure 6; R=0.1"
