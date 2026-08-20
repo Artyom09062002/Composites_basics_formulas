@@ -1,0 +1,13 @@
+{
+  "file_name": "NREL5MW_61p5m_CADBasedBlade_v6_FinalIntegrated.FCStd",
+  "file_size_bytes": 459392,
+  "sha256": "07f53a767bc324f3d9bff0aa9eb5a5a52bb7206939be09bb361a0f5a07fe6279",
+  "model_level": "FreeCAD v6 final integrated screening model",
+  "blade_length_m": 61.5,
+  "forward_web_db_layers_each_side": 5,
+  "aft_web_db_layers_each_side": 6,
+  "web_core_material": "Divinycell H100 equivalent",
+  "web_core_thickness_m": 0.06,
+  "drive_folder": "https://drive.google.com/drive/folders/1568kY9HVPt-y1rDeaz4n72Q8LZ079cSK",
+  "tracked_in_git": false
+}
