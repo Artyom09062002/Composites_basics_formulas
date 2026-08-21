@@ -1,0 +1,29 @@
+# NREL 5MW Baseline Blade — Planform Geometry
+# Source: Jonkman et al., NREL/TP-500-38060, 2009, Table 6-1 (RNode, AeroTwst, Chord, AeroFoil)
+# r [m]: radial station from blade root (hub flange)
+# r_over_R [-]: dimensionless span (R = 63 m to blade tip incl hub; blade = 61.5m)
+# chord [m]: local chord length
+# twist [deg]: aerodynamic twist (positive = towards feather/leading edge up)
+# airfoil: airfoil section name
+# Note: first two stations are cylindrical (drag-only) for structural root transition
+r_m,r_over_R,chord_m,twist_deg,airfoil
+2.8667,0.0227,3.542,13.308,Cylinder1
+5.6000,0.0444,3.854,13.308,Cylinder1
+8.3333,0.0661,4.167,13.308,Cylinder2
+11.7500,0.0932,4.557,13.308,Cylinder2
+15.8500,0.1257,4.652,11.480,DU40_A17
+19.9500,0.1582,4.458,10.162,DU35_A17
+24.0500,0.1907,4.249,9.011,DU35_A17
+28.1500,0.2232,4.007,7.795,DU30_A17
+32.2500,0.2557,3.748,6.544,DU25_A17
+36.3500,0.2882,3.502,5.361,DU25_A17
+40.4500,0.3207,3.256,4.188,DU21_A17
+44.5500,0.3532,3.010,3.125,DU21_A17
+48.6500,0.3857,2.764,2.319,NACA64_A17
+52.7500,0.4182,2.518,1.526,NACA64_A17
+56.1667,0.4453,2.313,0.863,NACA64_A17
+58.9000,0.4671,2.086,0.370,NACA64_A17
+61.6333,0.4888,1.419,0.106,NACA64_A17
+# Note: r values above are AeroDyn node positions from hub centre (hub radius = 1.5m subtracted separately).
+# In AeroDyn input (REF-001 Appendix A), stations run from r=2.8667m (close to hub) to r=61.6333m.
+# For blade structural model (SAND2013-2569, REF-002), structural stations align closely with aerodynamic nodes.

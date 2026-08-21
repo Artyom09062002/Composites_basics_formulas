@@ -1,0 +1,4 @@
+web_ply_multiplier,web_support_spacing_m,support_density_per_m,min_web_buckling_RF,added_web_laminate_mass_kg,blade_mass_excluding_supports_kg,feasible_screening,balanced_score,selection,direct_FE_web_buckling_RF,direct_FE_pass
+1.5,0.1,10.0,2.4368017144433116,679.474025662068,19065.703283337243,True,1.0,lowest laminate mass,2.4368017144433116,True
+3.0,0.5,2.0,1.8963871786932918,2717.896102648272,21104.125360323447,True,1.0,lowest support density,1.8963871786932918,True
+2.0,0.25,4.0,1.5709910304916157,1358.948051324136,19745.17730899931,True,0.5833333333333333,balanced screening trade,1.5709910304916157,True

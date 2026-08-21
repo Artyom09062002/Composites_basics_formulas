@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Generated engineering figures are presentation inputs, not repository data.
+DU35_wing/phases/**/results/*.png
+DU35_wing/phases/**/results/*.jpg
+DU35_wing/phases/**/results/*.jpeg
+DU35_wing/phases/**/results/*.svg

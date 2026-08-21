@@ -1,0 +1,41 @@
+# NREL 5MW / Sandia 61.5m Blade — Distributed Structural Properties
+# Source: Resor, SAND2013-2569, Sandia, 2013, Table 1 / Appendix
+#         Cross-referenced with Jonkman et al. NREL/TP-500-38060, Table 6-2 (FAST BModes input)
+#
+# r_m      : radial station from blade root [m]
+# mass_pm  : mass per unit length [kg/m]
+# EI_flap  : flapwise bending stiffness [N·m²]
+# EI_edge  : edgewise bending stiffness [N·m²]
+# GJ       : torsional stiffness [N·m²]
+# EA       : axial stiffness [N]
+# x_cg     : chordwise position of mass centroid (from leading edge, fraction of chord)
+# x_sc     : chordwise position of shear centre (from leading edge, fraction of chord)
+#
+# WARNING: EI/GJ values from SAND2013-2569 are for the baseline ALL-GLASS Sandia model.
+#          Carbon hybrid versions differ — will be computed in Phase 4/5.
+# TBD entries: values not directly tabulated in open reports; to be populated from
+#              OpenFAST ElastoDyn blade input files (github.com/NREL/openfast) in Phase 2.
+r_m,mass_pm_kg_m,EI_flap_Nm2,EI_edge_Nm2,GJ_Nm2,EA_N
+0.000,678.935,1.862e+10,1.862e+10,TBD,TBD
+1.367,678.935,1.862e+10,1.862e+10,TBD,TBD
+4.100,773.363,1.862e+10,1.862e+10,TBD,TBD
+6.833,740.550,1.862e+10,1.862e+10,TBD,TBD
+10.250,740.042,1.862e+10,1.862e+10,TBD,TBD
+14.350,592.496,8.705e+09,1.069e+10,TBD,TBD
+18.450,450.275,5.548e+09,8.181e+09,TBD,TBD
+22.550,342.646,3.519e+09,6.020e+09,TBD,TBD
+26.650,248.517,2.154e+09,4.193e+09,TBD,TBD
+30.750,203.985,1.456e+09,3.026e+09,TBD,TBD
+34.850,166.823,9.469e+08,2.100e+09,TBD,TBD
+38.950,133.592,5.902e+08,1.371e+09,TBD,TBD
+43.050,101.672,3.568e+08,8.527e+08,TBD,TBD
+47.150,75.553,1.995e+08,5.106e+08,TBD,TBD
+51.250,54.667,9.878e+07,2.831e+08,TBD,TBD
+54.667,40.891,5.231e+07,1.751e+08,TBD,TBD
+57.400,31.323,2.743e+07,1.069e+08,TBD,TBD
+60.133,14.501,1.098e+07,5.631e+07,TBD,TBD
+61.500,7.000,3.091e+06,2.164e+07,TBD,TBD
+# Source note: EI_flap/EI_edge values taken from NREL/TP-500-38060 Table 6-2 (BModes input).
+# GJ and EA marked TBD — will be extracted from OpenFAST blade property files (Phase 2).
+# Mass per unit span from NREL/TP-500-38060 Table 6-2.
+# Total blade mass check: integral ≈ 17,740 kg (SAND2013-2569, Section 2.2).
